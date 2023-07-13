@@ -1,0 +1,114 @@
+:root{
+  --dark-color:#19283f;
+  --green-color:#33d1cc;
+  --red-color:#ff3150;
+  --yellow-color:#ffc400;
+}
+
+
+body{
+  font-family:'Roboto',sans-serif;
+}
+
+
+.first-btn{
+  background-color:orangered;
+  color:white;
+  padding:0.5rem 1rem;
+}
+.navbar .search{
+  cursor: pointer;
+} 
+
+.second-btn{
+  border-radius: 0px;
+ background-color:orangered;
+ color: white; 
+  font-size: 20px;
+}
+.second-btn:hover{
+  border: 1px solid orangered;
+  background: transparent;
+  cursor: pointer;
+  color: orangered;
+
+}
+
+
+.third-btn{
+  border-radius: 0px;
+  background-color:black;
+  color: white; 
+   font-size: 20px;
+ }
+ .third-btn:hover{
+   border: 1px solid black;
+   background: transparent;
+   cursor: pointer;
+
+ 
+ }
+
+ .our-services .card:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+ .card::after{
+  display: none;
+  content:'';
+  width: 286px;
+  height: 10px;
+  background-color:orangered;
+  position: absolute;
+  bottom: 50px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.our-services .card:hover::after {
+  display: block;
+}
+
+.testimonial .carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.carousel-caption {
+  top: 70%;
+  transform: translateY(-50%);
+}
+
+
+.contact input[type="text"],
+input[type="email"],
+input[type="tel"]{
+  border:none;
+  border-bottom: 1px solid black;
+}
+
+
+.contact [type="email"],
+input[type="tel"],
+input[type="text"]:focus{
+  outline: none;
+}
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+.contact img{
+  float:right;
+}
+
+
+
+.footer .copyright >span{
+  color: var(--green-color);
+}
+.footer .copyright div span{
+  color:var(--yellow-color);
+}
+.footer .conatact svg{
+  width: 20px;
+  height: 20px;
+}
